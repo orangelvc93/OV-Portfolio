@@ -16,7 +16,7 @@
 .mobile-menu-container {
     display: flex;
     flex-direction: column;
-    width: 60vw;
+    width: 70vw;
     height: 100vh;
     background: var(--color-purple-dark);
     padding: 2rem;
