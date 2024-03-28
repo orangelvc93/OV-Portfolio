@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+
+
+  /* COLORS-------------------- */
+  --color-primary: #ffffff;
+  --color-secondary: #000000;
+
+  --color-bg: #060417;
+  --color-purple: #7e61e7;
+  --color-purple-light: #a993fe;
+  --color-purple-dark: #342864;
+  --color-gradient: linear-gradient(90deg, var(--color-purple-light) 0%, var(--color-purple) 100%);
+  --color-gradient-hover: linear-gradient(90deg, var(--color-purple-light) 0%, var(--color-purple) 70%, transparent 100%);
+
+  --color-menu: rgba(0, 0, 0, 0.1);
+
+  /* FONTS--------------------- */
+  --font-family: "Roboto", sans-serif;
+  --font-family2: "Rammetto One", sans-serif;
+
+
+  /* SIZES--------------------- */
+
+  --size-normal: clamp(1.5rem, 4vw, 2rem)
+}
+
+
+
+/* GLOBAL ===================================== */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  font-size: var(--size-normal);
+  font-family: var(--font-family);
+}
+
+body {
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background: var(--color-bg);
+  color: var(--color-primary);
+}
+
+
+/* BUTTONS ===================================== */
+
+.btn-contact {
+  background: var(--color-gradient);
+  padding: .5rem 1.5rem;
+  border: none;
+  border-radius: .5rem;
+  outline: 1.5px solid transparent;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  color: var(--color-primary);
+}
+
+.btn-contact:hover {
+  outline: 1.5px solid var(--color-purple-light);
+  color: var(--color-purple-light);
+  background: var(--color-bg);
+}
+
+.btn-menu {
+  display: none;
+  padding: .5rem;
+  border: none;
+  border-radius: .5rem;
+  line-height: 0;
+  background: var(--color-gradient);
+  cursor: pointer;
+  transition: all 0.4s ease;
+  color: var(--color-primary);
+  z-index: 1000;
+}
+
+.btn-contact_mobile {
+  width: 100%;
+}
+
+
+.btn-menu:hover {
+  outline: 1.5px solid var(--color-purple-light);
+  color: var(--color-purple-light);
+  background: var(--color-bg);
+}
