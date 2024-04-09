@@ -5,7 +5,8 @@
     backdrop-filter: blur(5rem);
     z-index: 30;
     top: 0;
-    padding: 3rem;
+    padding: 2rem;
+    margin-bottom: 3rem;
 }
 
 .nav-content {
